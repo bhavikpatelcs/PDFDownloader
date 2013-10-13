@@ -1,4 +1,3 @@
-
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
@@ -56,17 +55,7 @@ public class FileDownload {
             }
         }
     }
-
-    public static void main(String args[]) throws IOException {
-        Scanner s = new Scanner(System.in);
-        System.out.println(" Enter URL of WebSite");        // url must start with protocol e.g Http OR Https
-        URL url = new URL(s.nextLine());
-        System.out.println("Enter Location");               //enter the path of the location at where you want to store your files.: must follow the drive alphabet.
-        String location = s.nextLine();
-        download(location, url);
-
-    }
-
+    
     public static String read(InputStream i) throws MalformedURLException, IOException {
         BufferedReader br;
         try {
@@ -82,4 +71,17 @@ public class FileDownload {
         br.close();
         return HTML;
     }
+    
+
+    public static void main(String args[]) throws IOException {
+        Scanner s = new Scanner(System.in);
+        System.out.println(" Enter URL of WebSite");        // url must start with protocol e.g Http OR Https
+        URL url = new URL(s.nextLine());
+        System.out.println("Enter Location");               //enter the path of the location at where you want to store your files.: must follow the drive alphabet.
+        String location = s.nextLine();
+        download(location, url);
+
+    }
+
+    
 }
