@@ -18,7 +18,7 @@ public class FileDownload {
     public static void download(String location, URL web) throws IOException {
 
         // Set cookie variable if you need to download pdf's from the authenticated web url,leave it blank for other cases 
-        String cookie = "csrf_token=d98P8rIlQ6hdEWc8fpA9; __utma=126444767.1170688142.1366323720.1366323720.1366323720.1; __utmz=126444767.1366323720.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); data-readme-site-outage-announcement=1; __qca=P0-65300248-1370199575761; __204u=926387024-1375081450167; __204r=https%3A%2F%2Fwww.coursera.org%2F; CAUTH=vTofS-CEraJtaFSW92pmad00bdOK1hzi5Cwm-B0hNioeJ3G3zW9xfiranPs9cSzfuGxJYC1gcTfVDcqB7qgyIQ.er3ntwSA7s0ZFDqIU-sGKQ.Q7l8C-p-cRHLTI1omEk6Q_t2kntIz5eZUYv7MP0O3mKePyM2ohy3vr--PRXHfIAS7WkWtCXly9-Siq7vsRuNND06k7-5_qK1pFsCE7ZJtsN6xCJDiiB_UkGeWhFCj6i4t9GbHLAo3htJT2kW6IMdxn4IDwdTcsHaPckcSdg1EawUxlesfptGfmSf5h79vHsl; maestro_login_flag=1; data-readme-quiz-stats-v1=1; __utma=158142248.361837301.1366353727.1381621045.1381621505.109; __utmb=158142248.39.8.1381622602392; __utmc=158142248; __utmz=158142248.1381621505.109.9.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)";
+        String cookie = "";
         HttpURLConnection conn = (HttpURLConnection) web.openConnection();
         conn.setRequestProperty("Cookie", cookie);
         String HTML = read(conn.getInputStream());
