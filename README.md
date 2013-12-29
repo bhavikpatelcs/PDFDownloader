@@ -1,4 +1,4 @@
-##PDFDownloader
+##File Downloader
 
 
 This program downloads all the PDF available on the given URL as a input and stores it to the given location.I wrote this code to make the task of downloading large number of file from some course website(e.g coursera).
