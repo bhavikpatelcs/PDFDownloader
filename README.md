@@ -12,4 +12,4 @@ There is only one File,
 
 Screen Shot:
 
-![alt text](ScreenShot.jpg "Screen Shot")
+![alt text](ScreenShot.JPG "Screen Shot")
