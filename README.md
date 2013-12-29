@@ -1,7 +1,7 @@
 ##File Downloader
 
 
-This program downloads all file like PDF, JPG, PNG available on the given URL as a input and stores it to the given location.I wrote this code to make the task of downloading large number of file from some course website(e.g coursera).
+This program downloads all file like PDF, JPG, PNG available on URL given as a input and stores it to the given location.I wrote this code to make the task of downloading large number of file from some course website(e.g. Coursera).
 
 ##How To Run This Program
 
